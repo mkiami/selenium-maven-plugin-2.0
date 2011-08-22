@@ -1,0 +1,10 @@
+<metadata>
+  <groupId>org.codehaus.mojo</groupId>
+  <artifactId>mojo-parent</artifactId>
+  <versioning>
+    <versions>
+      <version>28</version>
+    </versions>
+    <lastUpdated>20110822093529</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/mojo/!svn/ver/14359/tags/selenium-maven-plugin-2.0/src/main/groovy/org/codehaus/mojo/selenium
+END
+StopServerMojo.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/mojo/!svn/ver/14359/tags/selenium-maven-plugin-2.0/src/main/groovy/org/codehaus/mojo/selenium/StopServerMojo.groovy
+END
+SeleneseMojo.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/mojo/!svn/ver/14359/tags/selenium-maven-plugin-2.0/src/main/groovy/org/codehaus/mojo/selenium/SeleneseMojo.groovy
+END
+StartServerMojo.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/mojo/!svn/ver/14359/tags/selenium-maven-plugin-2.0/src/main/groovy/org/codehaus/mojo/selenium/StartServerMojo.groovy
+END
+XvfbMojo.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/mojo/!svn/ver/14359/tags/selenium-maven-plugin-2.0/src/main/groovy/org/codehaus/mojo/selenium/XvfbMojo.groovy
+END

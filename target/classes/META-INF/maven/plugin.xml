@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+  <name>Maven Selenium Plugin</name>
+  <description>Support for using Selenium with Maven 2/3.</description>
+  <groupId>org.codehaus.mojo</groupId>
+  <artifactId>selenium-maven-plugin</artifactId>
+  <version>2.0.1-SNAPSHOT</version>
+  <goalPrefix>selenium</goalPrefix>
+  <isolatedRealm>false</isolatedRealm>
+  <inheritedByDefault>true</inheritedByDefault>
+  <mojos>
+    <mojo>
+      <goal>help</goal>
+      <description>Display help information on selenium-maven-plugin.&lt;br/&gt; Call &lt;pre&gt;  mvn selenium:help -Ddetail=true -Dgoal=&amp;lt;goal-name&amp;gt;&lt;/pre&gt; to display parameter details.</description>
+      <requiresDirectInvocation>false</requiresDirectInvocation>
+      <requiresProject>false</requiresProject>
+      <requiresReports>false</requiresReports>
+      <aggregator>false</aggregator>
+      <requiresOnline>false</requiresOnline>
+      <inheritedByDefault>true</inheritedByDefault>
+      <implementation>org.codehaus.mojo.selenium.HelpMojo</implementation>
+      <language>java</language>
+      <instantiationStrategy>per-lookup</instantiationStrategy>
+      <executionStrategy>once-per-session</executionStrategy>
+      <threadSafe>true</threadSafe>
+      <parameters>
+        <parameter>
+          <name>detail</name>
+          <type>boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>If &lt;code&gt;true&lt;/code&gt;, display all settable properties for each goal.</description>
+        </parameter>
+        <parameter>
+          <name>goal</name>
+          <type>java.lang.String</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>The name of the goal for which to show help. If unspecified, all goals will be displayed.</description>
+        </parameter>
+        <parameter>
+          <name>indentSize</name>
+          <type>int</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>The number of spaces per indentation level, should be positive.</description>
+        </parameter>
+        <parameter>
+          <name>lineLength</name>
+          <type>int</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>The maximum length of a display line, should be positive.</description>
+        </parameter>
+      </parameters>
+      <configuration>
+        <detail implementation="boolean" default-value="false">${detail}</detail>
+        <goal implementation="java.lang.String">${goal}</goal>
+        <indentSize implementation="int" default-value="2">${indentSize}</indentSize>
+        <lineLength implementation="int" default-value="80">${lineLength}</lineLength>
+      </configuration>
+    </mojo>
+    <mojo>
+      <goal>selenese</goal>
+      <description>Run a suite of HTML Selenese tests.</description>
+      <requiresDirectInvocation>false</requiresDirectInvocation>
+      <requiresProject>true</requiresProject>
+      <requiresReports>false</requiresReports>
+      <aggregator>false</aggregator>
+      <requiresOnline>false</requiresOnline>
+      <inheritedByDefault>true</inheritedByDefault>
+      <implementation>org.codehaus.mojo.selenium.SeleneseMojo</implementation>
+      <language>java</language>
+      <instantiationStrategy>per-lookup</instantiationStrategy>
+      <executionStrategy>once-per-session</executionStrategy>
+      <threadSafe>false</threadSafe>
+      <parameters>
+        <parameter>
+          <name>browser</name>
+          <type>java.lang.String</type>
+          <required>true</required>
+          <editable>true</editable>
+          <description>The browser name to run; must be one of the standard valid browser names
+(and must start with a *), e.g. *firefox, *iexplore, *custom.</description>
+        </parameter>
+        <parameter>
+          <name>multiWindow</name>
+          <type>boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>True if the application under test should run in its own window, false if
+the AUT will run in an embedded iframe.</description>
+        </parameter>
+        <parameter>
+          <name>port</name>
+          <type>int</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>The port on which we&apos;ll run the Selenium Server.</description>
+        </parameter>
+        <parameter>
+          <name>project</name>
+          <type>org.apache.maven.project.MavenProject</type>
+          <required>true</required>
+          <editable>false</editable>
+          <description></description>
+        </parameter>
+        <parameter>
+          <name>results</name>
+          <type>java.io.File</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>The file to which we&apos;ll write out our test results.</description>
+        </parameter>
+        <parameter>
+          <name>skip</name>
+          <type>boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Allows the tests to be skipped.</description>
+        </parameter>
+        <parameter>
+          <name>slowResources</name>
+          <type>boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>A debugging tool that slows down the Selenium Server. (Selenium developers only)</description>
+        </parameter>
+        <parameter>
+          <name>startURL</name>
+          <type>java.net.URL</type>
+          <required>true</required>
+          <editable>true</editable>
+          <description>The base URL on which the tests will be run, e.g. http://www.google.com.
+Note that only the hostname part of this URL will really be used.</description>
+        </parameter>
+        <parameter>
+          <name>suite</name>
+          <type>java.io.File</type>
+          <required>true</required>
+          <editable>true</editable>
+          <description>The suite file to run.</description>
+        </parameter>
+        <parameter>
+          <name>timeoutInSeconds</name>
+          <type>int</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Amount of time to wait before we just kill the browser.</description>
+        </parameter>
+      </parameters>
+      <configuration>
+        <multiWindow implementation="boolean" default-value="false"/>
+        <port implementation="int" default-value="4444"/>
+        <project implementation="org.apache.maven.project.MavenProject">${project}</project>
+        <skip implementation="boolean" default-value="false">${maven.test.skip}</skip>
+        <slowResources implementation="boolean" default-value="false"/>
+        <timeoutInSeconds implementation="int" default-value="1800"/>
+      </configuration>
+    </mojo>
+    <mojo>
+      <goal>xvfb</goal>
+      <description>Starts an Xvfb instance suitable for handling X11 displays for headless systems.
+Use this in combonation with the &lt;tt&gt;start-server&lt;/tt&gt; goal to allow browsers
+to be launched on headless unix systems.
+
+&lt;p&gt;
+Optionally uses &apos;xauth&apos; to setup authentication for the Xvfb instance to allow running tests using the
+frame buffer server when another X server is already running.
+&lt;/p&gt;</description>
+      <requiresDirectInvocation>false</requiresDirectInvocation>
+      <requiresProject>true</requiresProject>
+      <requiresReports>false</requiresReports>
+      <aggregator>false</aggregator>
+      <requiresOnline>false</requiresOnline>
+      <inheritedByDefault>true</inheritedByDefault>
+      <implementation>org.codehaus.mojo.selenium.XvfbMojo</implementation>
+      <language>java</language>
+      <instantiationStrategy>per-lookup</instantiationStrategy>
+      <executionStrategy>once-per-session</executionStrategy>
+      <threadSafe>false</threadSafe>
+      <parameters>
+        <parameter>
+          <name>authenticationFile</name>
+          <type>java.io.File</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>The file where X authentication data is stored for the Xvfb session.
+Default is to generate a temporary file.</description>
+        </parameter>
+        <parameter>
+          <name>background</name>
+          <type>boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Flag to control if we background the process or block Maven execution.</description>
+        </parameter>
+        <parameter>
+          <name>display</name>
+          <type>java.lang.String</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>The X11 display to use.  Default value is &lt;tt&gt;:20&lt;/tt&gt;.</description>
+        </parameter>
+        <parameter>
+          <name>displayPropertiesFile</name>
+          <type>java.io.File</type>
+          <required>true</required>
+          <editable>true</editable>
+          <description>The location of the file to write the display properties which will be picked up
+by the &lt;tt&gt;start-server&lt;/tt&gt; goal.</description>
+        </parameter>
+        <parameter>
+          <name>logFile</name>
+          <type>java.io.File</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>The file that Xvfb output will be written to.</description>
+        </parameter>
+        <parameter>
+          <name>logOutput</name>
+          <type>boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Enable logging mode.</description>
+        </parameter>
+        <parameter>
+          <name>options</name>
+          <type>java.lang.String[]</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>A list of additional options to pass to the Xvfb process.</description>
+        </parameter>
+        <parameter>
+          <name>reuse</name>
+          <type>boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Reuse Xvfb process</description>
+        </parameter>
+        <parameter>
+          <name>skip</name>
+          <type>boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Skip goal execution</description>
+        </parameter>
+        <parameter>
+          <name>xauthEnabled</name>
+          <type>boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Use &apos;xauth&apos; to setup permissions for the Xvfb server.  This requires &apos;xauth&apos; be installed
+and may be required when an X server is already running.</description>
+        </parameter>
+        <parameter>
+          <name>xauthExecutable</name>
+          <type>java.lang.String</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>The &apos;xauth&apos; command to execute.</description>
+        </parameter>
+        <parameter>
+          <name>xauthProtocol</name>
+          <type>java.lang.String</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>The &apos;xauth&apos; protocol.</description>
+        </parameter>
+        <parameter>
+          <name>xvfbExecutable</name>
+          <type>java.lang.String</type>
+          <required>true</required>
+          <editable>true</editable>
+          <description>The &apos;Xvfb&apos; command to execute.</description>
+        </parameter>
+      </parameters>
+      <configuration>
+        <background implementation="boolean" default-value="true"/>
+        <displayPropertiesFile implementation="java.io.File" default-value="${project.build.directory}/selenium/display.properties"/>
+        <logFile implementation="java.io.File" default-value="${project.build.directory}/selenium/xvfb.log"/>
+        <logOutput implementation="boolean" default-value="true"/>
+        <reuse implementation="boolean" default-value="false">${xvfb.reuse}</reuse>
+        <skip implementation="boolean" default-value="false">${maven.test.skip}</skip>
+        <xauthEnabled implementation="boolean" default-value="true"/>
+        <xauthExecutable implementation="java.lang.String" default-value="xauth"/>
+        <xauthProtocol implementation="java.lang.String" default-value="."/>
+        <xvfbExecutable implementation="java.lang.String" default-value="Xvfb"/>
+      </configuration>
+    </mojo>
+    <mojo>
+      <goal>start-server</goal>
+      <description>Start the Selenium server.</description>
+      <requiresDirectInvocation>false</requiresDirectInvocation>
+      <requiresProject>true</requiresProject>
+      <requiresReports>false</requiresReports>
+      <aggregator>false</aggregator>
+      <requiresOnline>false</requiresOnline>
+      <inheritedByDefault>true</inheritedByDefault>
+      <implementation>org.codehaus.mojo.selenium.StartServerMojo</implementation>
+      <language>java</language>
+      <instantiationStrategy>per-lookup</instantiationStrategy>
+      <executionStrategy>once-per-session</executionStrategy>
+      <threadSafe>false</threadSafe>
+      <parameters>
+        <parameter>
+          <name>avoidProxy</name>
+          <type>boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>By default, we proxy every browser request; set this
+flag to make the browser use our proxy only for URLs containing
+&apos;/selenium-server&apos;</description>
+        </parameter>
+        <parameter>
+          <name>background</name>
+          <type>boolean</type>
+          <required>true</required>
+          <editable>true</editable>
+          <description>Flag to control if we background the server or block Maven execution.</description>
+        </parameter>
+        <parameter>
+          <name>browserSessionReuse</name>
+          <type>boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Stops re-initialization and spawning of the browser between tests.</description>
+        </parameter>
+        <parameter>
+          <name>browserSideLog</name>
+          <type>boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Enables logging on the browser side; logging
+messages will be transmitted to the server.  This can affect
+performance.</description>
+        </parameter>
+        <parameter>
+          <name>debug</name>
+          <type>boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Enable the server&apos;s debug mode..</description>
+        </parameter>
+        <parameter>
+          <name>defaultUserExtensions</name>
+          <type>java.lang.String</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>The file or resource to use for default user-extensions.js.</description>
+        </parameter>
+        <parameter>
+          <name>defaultUserExtensionsEnabled</name>
+          <type>boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Enable or disable default user-extensions.js</description>
+        </parameter>
+        <parameter>
+          <name>displayPropertiesFile</name>
+          <type>java.io.File</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>The location of the file to read the display properties.</description>
+        </parameter>
+        <parameter>
+          <name>ensureCleanSession</name>
+          <type>boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>If the browser does not have user profiles,
+make sure every new session has no artifacts from previous
+sessions.  For example, enabling this option will cause all user
+cookies to be archived before launching IE, and restored after IE
+is closed.</description>
+        </parameter>
+        <parameter>
+          <name>firefoxProfileTemplate</name>
+          <type>java.io.File</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Normally a fresh empty Firefox profile is created every time we launch.
+You can specify a directory to make us copy your profile directory instead.</description>
+        </parameter>
+        <parameter>
+          <name>forcedBrowserMode</name>
+          <type>java.lang.String</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Sets the browser mode (e.g. &quot;*iexplore&quot; for all sessions).</description>
+        </parameter>
+        <parameter>
+          <name>logFile</name>
+          <type>java.io.File</type>
+          <required>true</required>
+          <editable>true</editable>
+          <description>The file that Selenium server logs will be written to.</description>
+        </parameter>
+        <parameter>
+          <name>logOutput</name>
+          <type>boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Enable logging mode.</description>
+        </parameter>
+        <parameter>
+          <name>nonProxyHosts</name>
+          <type>java.lang.String</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Configure the Selenium Server to use &lt;tt&gt;http.nonProxyHosts&lt;/tt&gt;.</description>
+        </parameter>
+        <parameter>
+          <name>pluginArtifactMap</name>
+          <type>java.util.Map</type>
+          <required>true</required>
+          <editable>false</editable>
+          <description></description>
+        </parameter>
+        <parameter>
+          <name>port</name>
+          <type>int</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>The port number of the server to connect to.</description>
+        </parameter>
+        <parameter>
+          <name>profilesLocation</name>
+          <type>java.lang.String</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Specify the option profilesLocation to selenium.
+See selenium documentation</description>
+        </parameter>
+        <parameter>
+          <name>proxyHost</name>
+          <type>java.lang.String</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Configure the Selenium Server to use &lt;tt&gt;http.proxyHost&lt;/tt&gt;.</description>
+        </parameter>
+        <parameter>
+          <name>proxyPort</name>
+          <type>java.lang.String</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Configure the Selenium Server to use &lt;tt&gt;http.proxyPort&lt;/tt&gt;.</description>
+        </parameter>
+        <parameter>
+          <name>singleWindow</name>
+          <type>boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Puts you into a mode where the test web site executes in a frame. This mode should only be
+selected if the application under test does not use frames.</description>
+        </parameter>
+        <parameter>
+          <name>skip</name>
+          <type>boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Allows the server startup to be skipped.</description>
+        </parameter>
+        <parameter>
+          <name>systemProperties</name>
+          <type>java.util.Map</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>List of System properties to pass to the selenium process.</description>
+        </parameter>
+        <parameter>
+          <name>timeout</name>
+          <type>int</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Timeout for the server in seconds.</description>
+        </parameter>
+        <parameter>
+          <name>trustAllSSLCertificates</name>
+          <type>boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Forces the Selenium proxy to trust all
+SSL certificates.  This doesn&apos;t work in browsers that don&apos;t use the
+Selenium proxy.</description>
+        </parameter>
+        <parameter>
+          <name>trustStore</name>
+          <type>java.io.File</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>The location of the SSL trust-store.</description>
+        </parameter>
+        <parameter>
+          <name>trustStorePassword</name>
+          <type>java.lang.String</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>The password for the SSL trust-store.</description>
+        </parameter>
+        <parameter>
+          <name>userExtensions</name>
+          <type>java.lang.String</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Location of the user-extensions.js to load into the server.
+If defaultUserExtensionsEnabled is true, then this file will be appended to the defaults.</description>
+        </parameter>
+        <parameter>
+          <name>verifyBrowser</name>
+          <type>java.lang.String</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Attempt to verify the named browser configuration.  Must be one of the
+standard valid browser names (and must start with a *), e.g. *firefox, *iexplore, *custom.</description>
+        </parameter>
+        <parameter>
+          <name>workingDirectory</name>
+          <type>java.io.File</type>
+          <required>true</required>
+          <editable>true</editable>
+          <description>Working directory where Selenium server will be started from.</description>
+        </parameter>
+      </parameters>
+      <configuration>
+        <avoidProxy implementation="boolean" default-value="false">${avoidProxy}</avoidProxy>
+        <background implementation="boolean" default-value="false">${background}</background>
+        <browserSessionReuse implementation="boolean" default-value="false">${browserSessionReuse}</browserSessionReuse>
+        <browserSideLog implementation="boolean">${browserSideLog}</browserSideLog>
+        <debug implementation="boolean" default-value="false">${debug}</debug>
+        <defaultUserExtensions implementation="java.lang.String" default-value="org/codehaus/mojo/selenium/default-user-extensions.js"/>
+        <defaultUserExtensionsEnabled implementation="boolean" default-value="true"/>
+        <displayPropertiesFile implementation="java.io.File" default-value="${project.build.directory}/selenium/display.properties"/>
+        <ensureCleanSession implementation="boolean" default-value="false">${ensureCleanSession}</ensureCleanSession>
+        <firefoxProfileTemplate implementation="java.io.File">${firefoxProfileTemplate}</firefoxProfileTemplate>
+        <forcedBrowserMode implementation="java.lang.String">${forcedBrowserMode}</forcedBrowserMode>
+        <logFile implementation="java.io.File" default-value="${project.build.directory}/selenium/server.log">${logFile}</logFile>
+        <logOutput implementation="boolean" default-value="false">${logOutput}</logOutput>
+        <nonProxyHosts implementation="java.lang.String">${nonProxyHosts}</nonProxyHosts>
+        <pluginArtifactMap implementation="java.util.Map">${plugin.artifactMap}</pluginArtifactMap>
+        <port implementation="int" default-value="4444">${port}</port>
+        <profilesLocation implementation="java.lang.String">${profilesLocation}</profilesLocation>
+        <proxyHost implementation="java.lang.String">${proxyHost}</proxyHost>
+        <proxyPort implementation="java.lang.String">${proxyPort}</proxyPort>
+        <singleWindow implementation="boolean" default-value="false">${singleWindow}</singleWindow>
+        <skip implementation="boolean" default-value="false">${maven.test.skip}</skip>
+        <timeout implementation="int" default-value="-1">${timeout}</timeout>
+        <trustAllSSLCertificates implementation="boolean" default-value="false">${trustAllSSLCertificates}</trustAllSSLCertificates>
+        <trustStore implementation="java.io.File">${trustStore}</trustStore>
+        <trustStorePassword implementation="java.lang.String">${trustStorePassword}</trustStorePassword>
+        <userExtensions implementation="java.lang.String">${userExtensions}</userExtensions>
+        <verifyBrowser implementation="java.lang.String">${verifyBrowser}</verifyBrowser>
+        <workingDirectory implementation="java.io.File">${project.build.directory}/selenium</workingDirectory>
+      </configuration>
+    </mojo>
+    <mojo>
+      <goal>stop-server</goal>
+      <description>Stop the Selenium server.</description>
+      <requiresDirectInvocation>false</requiresDirectInvocation>
+      <requiresProject>true</requiresProject>
+      <requiresReports>false</requiresReports>
+      <aggregator>false</aggregator>
+      <requiresOnline>false</requiresOnline>
+      <inheritedByDefault>true</inheritedByDefault>
+      <implementation>org.codehaus.mojo.selenium.StopServerMojo</implementation>
+      <language>java</language>
+      <instantiationStrategy>per-lookup</instantiationStrategy>
+      <executionStrategy>once-per-session</executionStrategy>
+      <threadSafe>false</threadSafe>
+      <parameters>
+        <parameter>
+          <name>port</name>
+          <type>int</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>The port number of the server to connect to.</description>
+        </parameter>
+        <parameter>
+          <name>skip</name>
+          <type>boolean</type>
+          <required>false</required>
+          <editable>true</editable>
+          <description>Skip goal execution</description>
+        </parameter>
+      </parameters>
+      <configuration>
+        <port implementation="int" default-value="4444">${port}</port>
+        <skip implementation="boolean" default-value="false">${maven.test.skip}</skip>
+      </configuration>
+    </mojo>
+  </mojos>
+  <dependencies>
+    <dependency>
+      <groupId>org.codehaus.gmaven</groupId>
+      <artifactId>gmaven-mojo</artifactId>
+      <type>jar</type>
+      <version>1.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.gmaven.runtime</groupId>
+      <artifactId>gmaven-runtime-api</artifactId>
+      <type>jar</type>
+      <version>1.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.gmaven.feature</groupId>
+      <artifactId>gmaven-feature-api</artifactId>
+      <type>jar</type>
+      <version>1.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.gmaven.runtime</groupId>
+      <artifactId>gmaven-runtime-1.5</artifactId>
+      <type>jar</type>
+      <version>1.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <type>jar</type>
+      <version>1.5.10</version>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.gmaven.feature</groupId>
+      <artifactId>gmaven-feature-support</artifactId>
+      <type>jar</type>
+      <version>1.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.gmaven.runtime</groupId>
+      <artifactId>gmaven-runtime-support</artifactId>
+      <type>jar</type>
+      <version>1.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.sonatype.gshell</groupId>
+      <artifactId>gshell-io</artifactId>
+      <type>jar</type>
+      <version>2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.sonatype.gossip</groupId>
+      <artifactId>gossip</artifactId>
+      <type>jar</type>
+      <version>1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.thoughtworks.qdox</groupId>
+      <artifactId>qdox</artifactId>
+      <type>jar</type>
+      <version>1.10</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.ant</groupId>
+      <artifactId>ant</artifactId>
+      <type>jar</type>
+      <version>1.7.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.ant</groupId>
+      <artifactId>ant-launcher</artifactId>
+      <type>jar</type>
+      <version>1.7.1</version>
+    </dependency>
+    <dependency>
+      <groupId>jline</groupId>
+      <artifactId>jline</artifactId>
+      <type>jar</type>
+      <version>0.9.94</version>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.gmaven</groupId>
+      <artifactId>gmaven-mojo-support</artifactId>
+      <type>jar</type>
+      <version>1.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.groovy</groupId>
+      <artifactId>groovy-all</artifactId>
+      <type>jar</type>
+      <version>1.7.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-server</artifactId>
+      <type>jar</type>
+      <version>2.4.0</version>
+    </dependency>
+    <dependency>
+      <groupId>bouncycastle</groupId>
+      <artifactId>bcprov-jdk15</artifactId>
+      <type>jar</type>
+      <version>135</version>
+    </dependency>
+    <dependency>
+      <groupId>mx4j</groupId>
+      <artifactId>mx4j-tools</artifactId>
+      <type>jar</type>
+      <version>3.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.mortbay.jetty</groupId>
+      <artifactId>servlet-api-2.5</artifactId>
+      <type>jar</type>
+      <version>6.1.9</version>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <type>jar</type>
+      <version>2.4.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-android-driver</artifactId>
+      <type>jar</type>
+      <version>2.4.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-remote-driver</artifactId>
+      <type>jar</type>
+      <version>2.4.0</version>
+    </dependency>
+    <dependency>
+      <groupId>cglib</groupId>
+      <artifactId>cglib-nodep</artifactId>
+      <type>jar</type>
+      <version>2.1_3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <type>jar</type>
+      <version>20080701</version>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-api</artifactId>
+      <type>jar</type>
+      <version>2.4.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <type>jar</type>
+      <version>r09</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <type>jar</type>
+      <version>4.0.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpcore</artifactId>
+      <type>jar</type>
+      <version>4.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+      <type>jar</type>
+      <version>1.1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <type>jar</type>
+      <version>1.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-chrome-driver</artifactId>
+      <type>jar</type>
+      <version>2.0rc2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-htmlunit-driver</artifactId>
+      <type>jar</type>
+      <version>2.0rc2</version>
+    </dependency>
+    <dependency>
+      <groupId>net.sourceforge.htmlunit</groupId>
+      <artifactId>htmlunit</artifactId>
+      <type>jar</type>
+      <version>2.8</version>
+    </dependency>
+    <dependency>
+      <groupId>xalan</groupId>
+      <artifactId>xalan</artifactId>
+      <type>jar</type>
+      <version>2.7.1</version>
+    </dependency>
+    <dependency>
+      <groupId>xalan</groupId>
+      <artifactId>serializer</artifactId>
+      <type>jar</type>
+      <version>2.7.1</version>
+    </dependency>
+    <dependency>
+      <groupId>xml-apis</groupId>
+      <artifactId>xml-apis</artifactId>
+      <type>jar</type>
+      <version>1.3.04</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-collections</groupId>
+      <artifactId>commons-collections</artifactId>
+      <type>jar</type>
+      <version>3.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+      <type>jar</type>
+      <version>2.4</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpmime</artifactId>
+      <type>jar</type>
+      <version>4.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.james</groupId>
+      <artifactId>apache-mime4j</artifactId>
+      <type>jar</type>
+      <version>0.6</version>
+    </dependency>
+    <dependency>
+      <groupId>net.sourceforge.htmlunit</groupId>
+      <artifactId>htmlunit-core-js</artifactId>
+      <type>jar</type>
+      <version>2.8</version>
+    </dependency>
+    <dependency>
+      <groupId>xerces</groupId>
+      <artifactId>xercesImpl</artifactId>
+      <type>jar</type>
+      <version>2.9.1</version>
+    </dependency>
+    <dependency>
+      <groupId>net.sourceforge.nekohtml</groupId>
+      <artifactId>nekohtml</artifactId>
+      <type>jar</type>
+      <version>1.9.14</version>
+    </dependency>
+    <dependency>
+      <groupId>net.sourceforge.cssparser</groupId>
+      <artifactId>cssparser</artifactId>
+      <type>jar</type>
+      <version>0.9.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.w3c.css</groupId>
+      <artifactId>sac</artifactId>
+      <type>jar</type>
+      <version>1.3</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <type>jar</type>
+      <version>2.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-firefox-driver</artifactId>
+      <type>jar</type>
+      <version>2.0rc2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-ie-driver</artifactId>
+      <type>jar</type>
+      <version>2.0rc2</version>
+    </dependency>
+    <dependency>
+      <groupId>net.java.dev.jna</groupId>
+      <artifactId>jna</artifactId>
+      <type>jar</type>
+      <version>3.2.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-iphone-driver</artifactId>
+      <type>jar</type>
+      <version>2.0rc2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-support</artifactId>
+      <type>jar</type>
+      <version>2.4.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.yaml</groupId>
+      <artifactId>snakeyaml</artifactId>
+      <type>jar</type>
+      <version>1.8</version>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-remote-control</artifactId>
+      <type>jar</type>
+      <version>2.0rc2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium.client-drivers</groupId>
+      <artifactId>selenium-java-client-driver</artifactId>
+      <type>jar</type>
+      <version>1.0.2</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <type>jar</type>
+      <version>2.4</version>
+    </dependency>
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <type>jar</type>
+      <version>1.2.14</version>
+    </dependency>
+  </dependencies>
+</plugin>

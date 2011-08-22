@@ -1,0 +1,92 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Unnamed - org.codehaus.mojo.selenium.it:change-port:jar:testing
+[INFO]    task-segment: [clean, verify]
+[INFO] ------------------------------------------------------------------------
+[INFO] [clean:clean {execution: default-clean}]
+[INFO] [groovy:generateStubs {execution: default}]
+[INFO] No sources found for Java stub generation
+[INFO] [resources:resources {execution: default-resources}]
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\mkiami\Documents\Selenium\Snapshot\selenium-maven-plugin\target\it\change-port\src\main\resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] No sources to compile
+[INFO] [groovy:compile {execution: default}]
+[INFO] No sources found to compile
+[INFO] [groovy:generateTestStubs {execution: default}]
+[INFO] Generated 1 Java stub
+[INFO] [resources:testResources {execution: default-testResources}]
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\mkiami\Documents\Selenium\Snapshot\selenium-maven-plugin\target\it\change-port\src\test\resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to C:\Users\mkiami\Documents\Selenium\Snapshot\selenium-maven-plugin\target\it\change-port\target\test-classes
+[INFO] [groovy:testCompile {execution: default}]
+[INFO] Compiled 1 Groovy class
+[INFO] [surefire:test {execution: default-test}]
+[INFO] Tests are skipped.
+[INFO] [jar:jar {execution: default-jar}]
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: C:\Users\mkiami\Documents\Selenium\Snapshot\selenium-maven-plugin\target\it\change-port\target\change-port-testing.jar
+[INFO] [selenium:start-server {execution: start}]
+Created dir: C:\Users\mkiami\Documents\Selenium\Snapshot\selenium-maven-plugin\target\it\change-port\target\selenium
+Launching Selenium Server
+Waiting for Selenium Server...
+[INFO] User extensions: C:\Users\mkiami\Documents\Selenium\Snapshot\selenium-maven-plugin\target\it\change-port\target\selenium\user-extensions.js
+11:36:29,549 INFO  [org.openqa.selenium.server.SeleniumServer] Java: Sun Microsystems Inc. 14.0-b16
+11:36:29,549 INFO  [org.openqa.selenium.server.SeleniumServer] OS: Windows 7 6.1 x86
+11:36:29,557 INFO  [org.openqa.selenium.server.SeleniumServer] v2.4.0, with Core v2.4.0. Built from revision 13336
+11:36:29,622 INFO  [org.openqa.selenium.server.SeleniumServer] RemoteWebDriver instances should connect to: http://127.0.0.1:4000/wd/hub
+11:36:29,623 INFO  [org.openqa.jetty.http.HttpServer] Version Jetty/5.1.x
+11:36:29,623 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+11:36:29,624 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/selenium-server,/selenium-server]
+11:36:29,624 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/,/]
+11:36:29,654 INFO  [org.openqa.jetty.util.Container] Started org.openqa.jetty.jetty.servlet.ServletHandler@1b000e7
+11:36:29,654 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/wd,/wd]
+11:36:29,658 INFO  [org.openqa.jetty.http.SocketListener] Started SocketListener on 0.0.0.0:4000
+11:36:29,658 INFO  [org.openqa.jetty.util.Container] Started org.openqa.jetty.jetty.Server@1ab28fe
+11:36:29.857 INFO - Checking Resource aliases
+Selenium Server started
+[INFO] [surefire:test {execution: default}]
+[INFO] Surefire report directory: C:\Users\mkiami\Documents\Selenium\Snapshot\selenium-maven-plugin\target\it\change-port\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running SeleniumExampleTest
+11:36:30,406 INFO  [org.openqa.jetty.util.Credential] Checking Resource aliases
+11:36:30.409 INFO - Command request: getNewBrowserSession[*firefox, http://mojo.codehaus.org:80/, ] on session null
+11:36:30.411 INFO - creating new remote session
+11:36:30.425 INFO - Allocated session 6e1093e8a29c4e98bacaf84cde70a3df for http://mojo.codehaus.org:80/, launching...
+11:36:30.494 INFO - Preparing Firefox profile...
+11:36:34.868 INFO - Launching Firefox...
+11:36:40.866 INFO - Got result: OK,6e1093e8a29c4e98bacaf84cde70a3df on session 6e1093e8a29c4e98bacaf84cde70a3df
+11:36:40.871 INFO - Command request: open[/selenium-maven-plugin/, ] on session 6e1093e8a29c4e98bacaf84cde70a3df
+11:36:41.927 INFO - Got result: OK on session 6e1093e8a29c4e98bacaf84cde70a3df
+11:36:41.932 INFO - Command request: waitForPageToLoad[30000, ] on session 6e1093e8a29c4e98bacaf84cde70a3df
+11:36:41.951 INFO - Got result: OK on session 6e1093e8a29c4e98bacaf84cde70a3df
+11:36:41.953 INFO - Command request: getTitle[, ] on session 6e1093e8a29c4e98bacaf84cde70a3df
+11:36:41.957 INFO - Got result: OK,Selenium Maven Plugin - Introduction on session 6e1093e8a29c4e98bacaf84cde70a3df
+11:36:41.967 INFO - Command request: testComplete[, ] on session 6e1093e8a29c4e98bacaf84cde70a3df
+11:36:41.967 INFO - Killing Firefox...
+11:36:42.040 INFO - Got result: OK on session 6e1093e8a29c4e98bacaf84cde70a3df
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.908 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] [selenium:stop-server {execution: stop}]
+Stopping Selenium server...
+11:36:42.135 INFO - Command request: shutDownSeleniumServer[, ] on session null
+11:36:42.135 INFO - Shutdown command received
+11:36:42.136 INFO - initiating shutdown
+11:36:42.136 INFO - Got result: OK on session null
+Stop request sent
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 18 seconds
+[INFO] Finished at: Mon Aug 22 11:36:42 CEST 2011
+[INFO] Final Memory: 37M/63M
+[INFO] ------------------------------------------------------------------------

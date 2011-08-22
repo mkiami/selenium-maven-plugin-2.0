@@ -1,0 +1,10 @@
+<metadata>
+  <groupId>org.sonatype.gossip</groupId>
+  <artifactId>gossip</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0</version>
+    </versions>
+    <lastUpdated>20110822093526</lastUpdated>
+  </versioning>
+</metadata>

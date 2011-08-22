@@ -1,0 +1,10 @@
+<metadata>
+  <groupId>org.apache.james</groupId>
+  <artifactId>james-project</artifactId>
+  <versioning>
+    <versions>
+      <version>1.2</version>
+    </versions>
+    <lastUpdated>20110822093528</lastUpdated>
+  </versioning>
+</metadata>

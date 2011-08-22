@@ -1,0 +1,96 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Unnamed - org.codehaus.mojo.selenium.it:verify-browser:jar:testing
+[INFO]    task-segment: [clean, verify]
+[INFO] ------------------------------------------------------------------------
+[INFO] [clean:clean {execution: default-clean}]
+[INFO] [groovy:generateStubs {execution: default}]
+[INFO] No sources found for Java stub generation
+[INFO] [resources:resources {execution: default-resources}]
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\mkiami\Documents\Selenium\Snapshot\selenium-maven-plugin\target\it\verify-browser\src\main\resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] No sources to compile
+[INFO] [groovy:compile {execution: default}]
+[INFO] No sources found to compile
+[INFO] [groovy:generateTestStubs {execution: default}]
+[INFO] Generated 1 Java stub
+[INFO] [resources:testResources {execution: default-testResources}]
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\mkiami\Documents\Selenium\Snapshot\selenium-maven-plugin\target\it\verify-browser\src\test\resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to C:\Users\mkiami\Documents\Selenium\Snapshot\selenium-maven-plugin\target\it\verify-browser\target\test-classes
+[INFO] [groovy:testCompile {execution: default}]
+[INFO] Compiled 1 Groovy class
+[INFO] [surefire:test {execution: default-test}]
+[INFO] Tests are skipped.
+[INFO] [jar:jar {execution: default-jar}]
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: C:\Users\mkiami\Documents\Selenium\Snapshot\selenium-maven-plugin\target\it\verify-browser\target\verify-browser-testing.jar
+[INFO] [selenium:start-server {execution: default}]
+Created dir: C:\Users\mkiami\Documents\Selenium\Snapshot\selenium-maven-plugin\target\it\verify-browser\target\selenium
+Launching Selenium Server
+Waiting for Selenium Server...
+[INFO] User extensions: C:\Users\mkiami\Documents\Selenium\Snapshot\selenium-maven-plugin\target\it\verify-browser\target\selenium\user-extensions.js
+11:36:48,673 INFO  [org.openqa.selenium.server.SeleniumServer] Java: Sun Microsystems Inc. 14.0-b16
+11:36:48,674 INFO  [org.openqa.selenium.server.SeleniumServer] OS: Windows 7 6.1 x86
+11:36:48,681 INFO  [org.openqa.selenium.server.SeleniumServer] v2.4.0, with Core v2.4.0. Built from revision 13336
+11:36:48,744 INFO  [org.openqa.selenium.server.SeleniumServer] RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+11:36:48,745 INFO  [org.openqa.jetty.http.HttpServer] Version Jetty/5.1.x
+11:36:48,745 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+11:36:48,746 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/selenium-server,/selenium-server]
+11:36:48,746 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/,/]
+11:36:48,775 INFO  [org.openqa.jetty.util.Container] Started org.openqa.jetty.jetty.servlet.ServletHandler@b76fa
+11:36:48,775 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/wd,/wd]
+11:36:48,779 INFO  [org.openqa.jetty.http.SocketListener] Started SocketListener on 0.0.0.0:4444
+11:36:48,779 INFO  [org.openqa.jetty.util.Container] Started org.openqa.jetty.jetty.Server@1ab28fe
+11:36:48.868 INFO - Checking Resource aliases
+[INFO] Verifying broweser configuration for: *firefox
+11:36:48,910 INFO  [org.openqa.jetty.util.Credential] Checking Resource aliases
+11:36:48.913 INFO - Command request: getNewBrowserSession[*firefox, http://localhost:4444/selenium-server, ] on session null
+11:36:48.915 INFO - creating new remote session
+11:36:48.930 INFO - Allocated session 9fb69703146342308ab7384343c72999 for http://localhost:4444/selenium-server, launching...
+11:36:48.931 WARN - It looks like your baseUrl (http://localhost:4444/selenium-server) is pointing to a file, not a directory (it doesn't end with a /).  We're going to have to strip off the last part of the pathname.
+11:36:49.012 INFO - Preparing Firefox profile...
+11:36:53.003 INFO - Launching Firefox...
+11:36:57.771 INFO - Got result: OK,9fb69703146342308ab7384343c72999 on session 9fb69703146342308ab7384343c72999
+11:36:57.774 INFO - Command request: testComplete[, ] on session 9fb69703146342308ab7384343c72999
+11:36:57.774 INFO - Killing Firefox...
+11:36:57.900 INFO - Got result: OK on session 9fb69703146342308ab7384343c72999
+Selenium Server started
+[INFO] [surefire:test {execution: default}]
+[INFO] Surefire report directory: C:\Users\mkiami\Documents\Selenium\Snapshot\selenium-maven-plugin\target\it\verify-browser\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running SeleniumExampleTest
+11:36:58.552 INFO - Command request: getNewBrowserSession[*firefox, http://mojo.codehaus.org:80/, ] on session null
+11:36:58.552 INFO - creating new remote session
+11:36:58.553 INFO - Allocated session 06a7e682b2f34db19bff7b418e308a37 for http://mojo.codehaus.org:80/, launching...
+11:36:58.644 INFO - Preparing Firefox profile...
+11:37:03.241 INFO - Launching Firefox...
+11:37:07.750 INFO - Got result: OK,06a7e682b2f34db19bff7b418e308a37 on session 06a7e682b2f34db19bff7b418e308a37
+11:37:07.756 INFO - Command request: open[/selenium-maven-plugin/, ] on session 06a7e682b2f34db19bff7b418e308a37
+11:37:08.840 INFO - Got result: OK on session 06a7e682b2f34db19bff7b418e308a37
+11:37:08.846 INFO - Command request: waitForPageToLoad[30000, ] on session 06a7e682b2f34db19bff7b418e308a37
+11:37:08.880 INFO - Got result: OK on session 06a7e682b2f34db19bff7b418e308a37
+11:37:08.883 INFO - Command request: getTitle[, ] on session 06a7e682b2f34db19bff7b418e308a37
+11:37:08.890 INFO - Got result: OK,Selenium Maven Plugin - Introduction on session 06a7e682b2f34db19bff7b418e308a37
+11:37:08.899 INFO - Command request: testComplete[, ] on session 06a7e682b2f34db19bff7b418e308a37
+11:37:08.899 INFO - Killing Firefox...
+11:37:08.968 INFO - Got result: OK on session 06a7e682b2f34db19bff7b418e308a37
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.709 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 25 seconds
+[INFO] Finished at: Mon Aug 22 11:37:09 CEST 2011
+[INFO] Final Memory: 34M/62M
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,703 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Unnamed - org.codehaus.mojo.selenium.it:basic-usage:jar:testing
+[INFO]    task-segment: [clean, verify]
+[INFO] ------------------------------------------------------------------------
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/plugins/maven-clean-plugin/2.2/maven-clean-plugin-2.2.pom
+[INFO] Unable to find resource 'org.apache.maven.plugins:maven-clean-plugin:pom:2.2' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.2/maven-clean-plugin-2.2.pom
+
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/plugins/maven-plugins/10/maven-plugins-10.pom
+7K downloaded  (maven-plugins-10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-parent/7/maven-parent-7.pom
+20K downloaded  (maven-parent-7.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/plugins/maven-clean-plugin/2.2/maven-clean-plugin-2.2.jar
+[INFO] Unable to find resource 'org.apache.maven.plugins:maven-clean-plugin:maven-plugin:2.2' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.2/maven-clean-plugin-2.2.jar
+
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/gmaven/gmaven-plugin/1.3/gmaven-plugin-1.3.pom
+10K downloaded  (gmaven-plugin-1.3.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/gmaven/gmaven-plugin/1.3/gmaven-plugin-1.3.jar
+71K downloaded  (gmaven-plugin-1.3.jar)
+[INFO] snapshot org.codehaus.mojo:selenium-maven-plugin:2.0.1-SNAPSHOT: checking for updates from local.central
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-project/2.0/maven-project-2.0.pom
+1K downloaded  (maven-project-2.0.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven/2.0/maven-2.0.pom
+8K downloaded  (maven-2.0.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-profile/2.0/maven-profile-2.0.pom
+[INFO] Unable to find resource 'org.apache.maven:maven-profile:pom:2.0' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-profile/2.0/maven-profile-2.0.pom
+[INFO] Unable to find resource 'org.apache.maven:maven-profile:pom:2.0' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/maven-profile/2.0/maven-profile-2.0.pom
+
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-model/2.0/maven-model-2.0.pom
+2K downloaded  (maven-model-2.0.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.pom
+6K downloaded  (plexus-utils-1.0.4.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.pom
+7K downloaded  (plexus-container-default-1.0-alpha-8.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/junit/junit/3.8.1/junit-3.8.1.pom
+998b downloaded  (junit-3.8.1.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.pom
+3K downloaded  (classworlds-1.1-alpha-2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.pom
+1K downloaded  (maven-artifact-manager-2.0.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.pom
+[INFO] Unable to find resource 'org.apache.maven:maven-repository-metadata:pom:2.0' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.pom
+[INFO] Unable to find resource 'org.apache.maven:maven-repository-metadata:pom:2.0' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.pom
+
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-artifact/2.0/maven-artifact-2.0.pom
+723b downloaded  (maven-artifact-2.0.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-5/wagon-provider-api-1.0-alpha-5.pom
+[INFO] Unable to find resource 'org.apache.maven.wagon:wagon-provider-api:pom:1.0-alpha-5' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-5/wagon-provider-api-1.0-alpha-5.pom
+[INFO] Unable to find resource 'org.apache.maven.wagon:wagon-provider-api:pom:1.0-alpha-5' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-5/wagon-provider-api-1.0-alpha-5.pom
+
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.pom
+601b downloaded  (maven-plugin-api-2.0.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.pom
+[INFO] Unable to find resource 'org.apache.maven.shared:file-management:pom:1.2' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/shared/file-management/1.2/file-management-1.2.pom
+
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/shared/maven-shared-components/8/maven-shared-components-8.pom
+2K downloaded  (maven-shared-components-8.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.pom
+1K downloaded  (maven-plugin-api-2.0.6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven/2.0.6/maven-2.0.6.pom
+8K downloaded  (maven-2.0.6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-parent/5/maven-parent-5.pom
+14K downloaded  (maven-parent-5.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.pom
+3K downloaded  (maven-shared-io-1.1.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-artifact/2.0.2/maven-artifact-2.0.2.pom
+[INFO] Unable to find resource 'org.apache.maven:maven-artifact:pom:2.0.2' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-artifact/2.0.2/maven-artifact-2.0.2.pom
+[INFO] Unable to find resource 'org.apache.maven:maven-artifact:pom:2.0.2' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/maven-artifact/2.0.2/maven-artifact-2.0.2.pom
+
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven/2.0.2/maven-2.0.2.pom
+12K downloaded  (maven-2.0.2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.2/maven-artifact-manager-2.0.2.pom
+1K downloaded  (maven-artifact-manager-2.0.2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6.pom
+588b downloaded  (wagon-provider-api-1.0-alpha-6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/wagon/wagon/1.0-alpha-6/wagon-1.0-alpha-6.pom
+6K downloaded  (wagon-1.0-alpha-6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.6/plexus-utils-1.4.6.pom
+[INFO] Unable to find resource 'org.codehaus.plexus:plexus-utils:pom:1.4.6' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.6/plexus-utils-1.4.6.pom
+[INFO] Unable to find resource 'org.codehaus.plexus:plexus-utils:pom:1.4.6' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/1.4.6/plexus-utils-1.4.6.pom
+
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.pom
+8K downloaded  (plexus-1.0.11.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-9/plexus-container-default-1.0-alpha-9.pom
+1K downloaded  (plexus-container-default-1.0-alpha-9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-containers/1.0.3/plexus-containers-1.0.3.pom
+492b downloaded  (plexus-containers-1.0.3.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus/1.0.4/plexus-1.0.4.pom
+5K downloaded  (plexus-1.0.4.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.pom
+767b downloaded  (plexus-utils-1.1.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
+[INFO] Unable to find resource 'org.apache.maven.shared:file-management:jar:1.2' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
+164K downloaded  (plexus-utils-1.1.jar)
+
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
+38K downloaded  (maven-shared-io-1.1.jar)
+[INFO] [clean:clean {execution: default-clean}]
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/plugins/maven-resources-plugin/2.3/maven-resources-plugin-2.3.pom
+4K downloaded  (maven-resources-plugin-2.3.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/plugins/maven-plugins/12/maven-plugins-12.pom
+11K downloaded  (maven-plugins-12.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-parent/9/maven-parent-9.pom
+32K downloaded  (maven-parent-9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/plugins/maven-resources-plugin/2.3/maven-resources-plugin-2.3.jar
+20K downloaded  (maven-resources-plugin-2.3.jar)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.3.2/maven-compiler-plugin-2.3.2.pom
+7K downloaded  (maven-compiler-plugin-2.3.2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/plugins/maven-plugins/18/maven-plugins-18.pom
+12K downloaded  (maven-plugins-18.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-parent/16/maven-parent-16.pom
+22K downloaded  (maven-parent-16.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/2.3.2/maven-compiler-plugin-2.3.2.jar
+28K downloaded  (maven-compiler-plugin-2.3.2.jar)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/plugins/maven-surefire-plugin/2.8.1/maven-surefire-plugin-2.8.1.pom
+[INFO] Unable to find resource 'org.apache.maven.plugins:maven-surefire-plugin:pom:2.8.1' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.8.1/maven-surefire-plugin-2.8.1.pom
+
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/surefire/surefire/2.8.1/surefire-2.8.1.pom
+[INFO] Unable to find resource 'org.apache.maven.surefire:surefire:pom:2.8.1' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire/2.8.1/surefire-2.8.1.pom
+
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-parent/19/maven-parent-19.pom
+24K downloaded  (maven-parent-19.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/apache/9/apache-9.pom
+14K downloaded  (apache-9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/plugins/maven-surefire-plugin/2.8.1/maven-surefire-plugin-2.8.1.jar
+[INFO] Unable to find resource 'org.apache.maven.plugins:maven-surefire-plugin:maven-plugin:2.8.1' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.8.1/maven-surefire-plugin-2.8.1.jar
+
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/plugins/maven-jar-plugin/2.2/maven-jar-plugin-2.2.pom
+8K downloaded  (maven-jar-plugin-2.2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/plugins/maven-jar-plugin/2.2/maven-jar-plugin-2.2.jar
+26K downloaded  (maven-jar-plugin-2.2.jar)
+Downloading: file:///C:/Users/mkiami/.m2/repository/junit/junit/3.8.2/junit-3.8.2.pom
+747b downloaded  (junit-3.8.2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/gmaven/runtime/gmaven-runtime-loader/1.3/gmaven-runtime-loader-1.3.pom
+2K downloaded  (gmaven-runtime-loader-1.3.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-artifact/2.0.10/maven-artifact-2.0.10.pom
+1K downloaded  (maven-artifact-2.0.10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven/2.0.10/maven-2.0.10.pom
+23K downloaded  (maven-2.0.10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-utils/2.0.1/plexus-utils-2.0.1.pom
+3K downloaded  (plexus-utils-2.0.1.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus/2.0.3/plexus-2.0.3.pom
+15K downloaded  (plexus-2.0.3.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/sonatype/gossip/gossip/1.2/gossip-1.2.pom
+18K downloaded  (gossip-1.2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.pom
+3K downloaded  (plexus-classworlds-2.2.2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/shared/file-management/1.2.1/file-management-1.2.1.pom
+3K downloaded  (file-management-1.2.1.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/shared/maven-shared-components/10/maven-shared-components-10.pom
+8K downloaded  (maven-shared-components-10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-plugin-api/2.0.10/maven-plugin-api-2.0.10.pom
+1K downloaded  (maven-plugin-api-2.0.10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-repository-metadata/2.0.2/maven-repository-metadata-2.0.2.pom
+1K downloaded  (maven-repository-metadata-2.0.2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.pom
+3K downloaded  (plexus-container-default-1.0-alpha-9-stable-1.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-plugin-descriptor/2.0.10/maven-plugin-descriptor-2.0.10.pom
+2K downloaded  (maven-plugin-descriptor-2.0.10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/reporting/maven-reporting-impl/2.0.4.1/maven-reporting-impl-2.0.4.1.pom
+2K downloaded  (maven-reporting-impl-2.0.4.1.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-project/2.0.10/maven-project-2.0.10.pom
+2K downloaded  (maven-project-2.0.10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-settings/2.0.10/maven-settings-2.0.10.pom
+2K downloaded  (maven-settings-2.0.10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-model/2.0.10/maven-model-2.0.10.pom
+3K downloaded  (maven-model-2.0.10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.1/plexus-interpolation-1.1.pom
+1K downloaded  (plexus-interpolation-1.1.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-profile/2.0.10/maven-profile-2.0.10.pom
+2K downloaded  (maven-profile-2.0.10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.10/maven-artifact-manager-2.0.10.pom
+2K downloaded  (maven-artifact-manager-2.0.10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-plugin-registry/2.0.10/maven-plugin-registry-2.0.10.pom
+1K downloaded  (maven-plugin-registry-2.0.10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/commons-validator/commons-validator/1.2.0/commons-validator-1.2.0.pom
+8K downloaded  (commons-validator-1.2.0.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.pom
+357b downloaded  (commons-beanutils-1.7.0.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/commons-logging/commons-logging/1.0.3/commons-logging-1.0.3.pom
+866b downloaded  (commons-logging-1.0.3.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/commons-digester/commons-digester/1.6/commons-digester-1.6.pom
+974b downloaded  (commons-digester-1.6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/commons-beanutils/commons-beanutils/1.6/commons-beanutils-1.6.pom
+2K downloaded  (commons-beanutils-1.6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/commons-logging/commons-logging/1.0/commons-logging-1.0.pom
+163b downloaded  (commons-logging-1.0.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/commons-collections/commons-collections/2.1/commons-collections-2.1.pom
+3K downloaded  (commons-collections-2.1.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.pom
+2K downloaded  (xml-apis-1.0.b2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.pom
+5K downloaded  (commons-logging-1.0.4.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/oro/oro/2.0.8/oro-2.0.8.pom
+140b downloaded  (oro-2.0.8.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/xml-apis/xml-apis/2.0.2/xml-apis-2.0.2.pom
+346b downloaded  (xml-apis-2.0.2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/doxia/doxia-core/1.0-alpha-10/doxia-core-1.0-alpha-10.pom
+2K downloaded  (doxia-core-1.0-alpha-10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/doxia/doxia/1.0-alpha-10/doxia-1.0-alpha-10.pom
+8K downloaded  (doxia-1.0-alpha-10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-parent/6/maven-parent-6.pom
+19K downloaded  (maven-parent-6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-10/doxia-sink-api-1.0-alpha-10.pom
+1K downloaded  (doxia-sink-api-1.0-alpha-10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/reporting/maven-reporting-api/2.0.4/maven-reporting-api-2.0.4.pom
+902b downloaded  (maven-reporting-api-2.0.4.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/reporting/maven-reporting/2.0.4/maven-reporting-2.0.4.pom
+700b downloaded  (maven-reporting-2.0.4.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven/2.0.4/maven-2.0.4.pom
+11K downloaded  (maven-2.0.4.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.pom
+424b downloaded  (doxia-sink-api-1.0-alpha-7.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/doxia/doxia/1.0-alpha-7/doxia-1.0-alpha-7.pom
+3K downloaded  (doxia-1.0-alpha-7.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.0-alpha-10/doxia-site-renderer-1.0-alpha-10.pom
+4K downloaded  (doxia-site-renderer-1.0-alpha-10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.0-alpha-10/doxia-sitetools-1.0-alpha-10.pom
+7K downloaded  (doxia-sitetools-1.0-alpha-10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-i18n/1.0-beta-7/plexus-i18n-1.0-beta-7.pom
+1K downloaded  (plexus-i18n-1.0-beta-7.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-components/1.1.12/plexus-components-1.1.12.pom
+2K downloaded  (plexus-components-1.1.12.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus/1.0.10/plexus-1.0.10.pom
+8K downloaded  (plexus-1.0.10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.7/plexus-velocity-1.1.7.pom
+1K downloaded  (plexus-velocity-1.1.7.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/velocity/velocity/1.5/velocity-1.5.pom
+7K downloaded  (velocity-1.5.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/commons-collections/commons-collections/3.1/commons-collections-3.1.pom
+5K downloaded  (commons-collections-3.1.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/doxia/doxia-decoration-model/1.0-alpha-10/doxia-decoration-model-1.0-alpha-10.pom
+2K downloaded  (doxia-decoration-model-1.0-alpha-10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/commons-collections/commons-collections/3.2/commons-collections-3.2.pom
+10K downloaded  (commons-collections-3.2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/doxia/doxia-module-apt/1.0-alpha-10/doxia-module-apt-1.0-alpha-10.pom
+2K downloaded  (doxia-module-apt-1.0-alpha-10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/doxia/doxia-modules/1.0-alpha-10/doxia-modules-1.0-alpha-10.pom
+2K downloaded  (doxia-modules-1.0-alpha-10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/doxia/doxia-module-fml/1.0-alpha-10/doxia-module-fml-1.0-alpha-10.pom
+2K downloaded  (doxia-module-fml-1.0-alpha-10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/doxia/doxia-module-xdoc/1.0-alpha-10/doxia-module-xdoc-1.0-alpha-10.pom
+2K downloaded  (doxia-module-xdoc-1.0-alpha-10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml/1.0-alpha-10/doxia-module-xhtml-1.0-alpha-10.pom
+1K downloaded  (doxia-module-xhtml-1.0-alpha-10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/doxia/doxia-core/1.0-alpha-10/doxia-core-1.0-alpha-10.jar
+Downloading: file:///C:/Users/mkiami/.m2/repository/commons-digester/commons-digester/1.6/commons-digester-1.6.jar
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/reporting/maven-reporting-impl/2.0.4.1/maven-reporting-impl-2.0.4.1.jar
+Downloading: file:///C:/Users/mkiami/.m2/repository/commons-validator/commons-validator/1.2.0/commons-validator-1.2.0.jar
+53K downloaded  (doxia-core-1.0-alpha-10.jar)
+18K downloaded  (maven-reporting-impl-2.0.4.1.jar)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/velocity/velocity/1.5/velocity-1.5.jar
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/sonatype/gossip/gossip/1.2/gossip-1.2.jar
+63K downloaded  (oro-2.0.8.jar)
+74K downloaded  (gossip-1.2.jar)
+164K downloaded  (commons-digester-1.6.jar)
+88K downloaded  (commons-validator-1.2.0.jar)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/shared/file-management/1.2.1/file-management-1.2.1.jar
+382K downloaded  (velocity-1.5.jar)
+Downloading: file:///C:/Users/mkiami/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar
+Downloading: file:///C:/Users/mkiami/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar
+Downloading: file:///C:/Users/mkiami/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
+36K downloaded  (file-management-1.2.1.jar)
+Downloading: file:///C:/Users/mkiami/.m2/repository/commons-collections/commons-collections/3.2/commons-collections-3.2.jar
+37K downloaded  (commons-logging-1.0.4.jar)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.jar
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.0-alpha-10/doxia-site-renderer-1.0-alpha-10.jar
+106K downloaded  (xml-apis-1.0.b2.jar)
+45K downloaded  (plexus-classworlds-2.2.2.jar)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/gmaven/runtime/gmaven-runtime-loader/1.3/gmaven-runtime-loader-1.3.jar
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-i18n/1.0-beta-7/plexus-i18n-1.0-beta-7.jar
+184K downloaded  (commons-beanutils-1.7.0.jar)
+10K downloaded  (plexus-i18n-1.0-beta-7.jar)
+44K downloaded  (doxia-site-renderer-1.0-alpha-10.jar)
+24K downloaded  (gmaven-runtime-loader-1.3.jar)
+557K downloaded  (commons-collections-3.2.jar)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.7/plexus-velocity-1.1.7.jar
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/doxia/doxia-decoration-model/1.0-alpha-10/doxia-decoration-model-1.0-alpha-10.jar
+7K downloaded  (plexus-velocity-1.1.7.jar)
+48K downloaded  (doxia-decoration-model-1.0-alpha-10.jar)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/doxia/doxia-module-apt/1.0-alpha-10/doxia-module-apt-1.0-alpha-10.jar
+45K downloaded  (doxia-module-apt-1.0-alpha-10.jar)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/doxia/doxia-module-fml/1.0-alpha-10/doxia-module-fml-1.0-alpha-10.jar
+17K downloaded  (doxia-module-fml-1.0-alpha-10.jar)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/doxia/doxia-module-xdoc/1.0-alpha-10/doxia-module-xdoc-1.0-alpha-10.jar
+26K downloaded  (doxia-module-xdoc-1.0-alpha-10.jar)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml/1.0-alpha-10/doxia-module-xhtml-1.0-alpha-10.jar
+20K downloaded  (doxia-module-xhtml-1.0-alpha-10.jar)
+[INFO] [groovy:generateStubs {execution: default}]
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/gmaven/runtime/gmaven-runtime-1.6/1.3/gmaven-runtime-1.6-1.3.pom
+3K downloaded  (gmaven-runtime-1.6-1.3.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8.pom
+2K downloaded  (slf4j-api-1.5.8.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/slf4j/slf4j-parent/1.5.8/slf4j-parent-1.5.8.pom
+7K downloaded  (slf4j-parent-1.5.8.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/groovy/groovy-all/1.6.9/groovy-all-1.6.9.pom
+24K downloaded  (groovy-all-1.6.9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/gmaven/runtime/gmaven-runtime-1.6/1.3/gmaven-runtime-1.6-1.3.jar
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/groovy/groovy-all/1.6.9/groovy-all-1.6.9.jar
+118K downloaded  (junit-3.8.1.jar)
+41K downloaded  (gmaven-runtime-1.6-1.3.jar)
+4480K downloaded  (groovy-all-1.6.9.jar)
+[INFO] No sources found for Java stub generation
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.pom
+2K downloaded  (maven-project-2.0.6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.pom
+1K downloaded  (maven-settings-2.0.6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.pom
+2K downloaded  (maven-model-2.0.6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.1/plexus-utils-1.4.1.pom
+1K downloaded  (plexus-utils-1.4.1.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.pom
+1K downloaded  (maven-profile-2.0.6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.pom
+2K downloaded  (maven-artifact-manager-2.0.6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.pom
+1K downloaded  (maven-repository-metadata-2.0.6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.pom
+1K downloaded  (maven-artifact-2.0.6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-beta-2/wagon-provider-api-1.0-beta-2.pom
+680b downloaded  (wagon-provider-api-1.0-beta-2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/wagon/wagon/1.0-beta-2/wagon-1.0-beta-2.pom
+5K downloaded  (wagon-1.0-beta-2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-parent/4/maven-parent-4.pom
+9K downloaded  (maven-parent-4.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.pom
+1K downloaded  (maven-plugin-registry-2.0.6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.pom
+5K downloaded  (plexus-utils-1.5.6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus/1.0.12/plexus-1.0.12.pom
+9K downloaded  (plexus-1.0.12.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/shared/maven-filtering/1.0-beta-2/maven-filtering-1.0-beta-2.pom
+3K downloaded  (maven-filtering-1.0-beta-2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.pom
+6K downloaded  (maven-core-2.0.6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/wagon/wagon-file/1.0-beta-2/wagon-file-1.0-beta-2.pom
+637b downloaded  (wagon-file-1.0-beta-2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/wagon/wagon-providers/1.0-beta-2/wagon-providers-1.0-beta-2.pom
+1K downloaded  (wagon-providers-1.0-beta-2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.pom
+1K downloaded  (maven-plugin-parameter-documenter-2.0.6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/wagon/wagon-http-lightweight/1.0-beta-2/wagon-http-lightweight-1.0-beta-2.pom
+1K downloaded  (wagon-http-lightweight-1.0-beta-2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/wagon/wagon-http-shared/1.0-beta-2/wagon-http-shared-1.0-beta-2.pom
+845b downloaded  (wagon-http-shared-1.0-beta-2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/jtidy/jtidy/4aug2000r7-dev/jtidy-4aug2000r7-dev.pom
+1K downloaded  (jtidy-4aug2000r7-dev.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.pom
+1K downloaded  (maven-reporting-api-2.0.6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/reporting/maven-reporting/2.0.6/maven-reporting-2.0.6.pom
+1K downloaded  (maven-reporting-2.0.6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.pom
+1K downloaded  (maven-error-diagnostics-2.0.6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/commons-cli/commons-cli/1.0/commons-cli-1.0.pom
+2K downloaded  (commons-cli-1.0.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/wagon/wagon-ssh-external/1.0-beta-2/wagon-ssh-external-1.0-beta-2.pom
+1K downloaded  (wagon-ssh-external-1.0-beta-2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/wagon/wagon-ssh-common/1.0-beta-2/wagon-ssh-common-1.0-beta-2.pom
+851b downloaded  (wagon-ssh-common-1.0-beta-2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.pom
+6K downloaded  (plexus-interactivity-api-1.0-alpha-4.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-7/plexus-container-default-1.0-alpha-7.pom
+1K downloaded  (plexus-container-default-1.0-alpha-7.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/plexus/plexus-containers/1.0.2/plexus-containers-1.0.2.pom
+471b downloaded  (plexus-containers-1.0.2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/plexus/plexus-root/1.0.3/plexus-root-1.0.3.pom
+5K downloaded  (plexus-root-1.0.3.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.pom
+740b downloaded  (plexus-utils-1.0.2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.pom
+1K downloaded  (maven-plugin-descriptor-2.0.6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.pom
+1K downloaded  (maven-monitor-2.0.6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/wagon/wagon-ssh/1.0-beta-2/wagon-ssh-1.0-beta-2.pom
+1K downloaded  (wagon-ssh-1.0-beta-2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/com/jcraft/jsch/0.1.27/jsch-0.1.27.pom
+965b downloaded  (jsch-0.1.27.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/classworlds/classworlds/1.1/classworlds-1.1.pom
+3K downloaded  (classworlds-1.1.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.6/plexus-interpolation-1.6.pom
+2K downloaded  (plexus-interpolation-1.6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/shared/maven-filtering/1.0-beta-2/maven-filtering-1.0-beta-2.jar
+244K downloaded  (plexus-utils-1.5.6.jar)
+32K downloaded  (maven-filtering-1.0-beta-2.jar)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.6/plexus-interpolation-1.6.jar
+49K downloaded  (plexus-interpolation-1.6.jar)
+[INFO] [resources:resources {execution: default-resources}]
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\mkiami\Documents\Selenium\Snapshot\selenium-maven-plugin\target\it\basic-usage\src\main\resources
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.pom
+3K downloaded  (maven-toolchain-1.0.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.pom
+3K downloaded  (plexus-utils-2.0.5.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom
+16K downloaded  (plexus-2.0.6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.8.1/plexus-compiler-api-1.8.1.pom
+805b downloaded  (plexus-compiler-api-1.8.1.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-compiler/1.8.1/plexus-compiler-1.8.1.pom
+3K downloaded  (plexus-compiler-1.8.1.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-components/1.1.18/plexus-components-1.1.18.pom
+5K downloaded  (plexus-components-1.1.18.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus/2.0.7/plexus-2.0.7.pom
+16K downloaded  (plexus-2.0.7.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.pom
+5K downloaded  (plexus-utils-1.5.5.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.8.1/plexus-compiler-manager-1.8.1.pom
+713b downloaded  (plexus-compiler-manager-1.8.1.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.8.1/plexus-compiler-javac-1.8.1.pom
+710b downloaded  (plexus-compiler-javac-1.8.1.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-compilers/1.8.1/plexus-compilers-1.8.1.pom
+1K downloaded  (plexus-compilers-1.8.1.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.jar
+217K downloaded  (plexus-utils-2.0.5.jar)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-compiler-api/1.8.1/plexus-compiler-api-1.8.1.jar
+19K downloaded  (plexus-compiler-api-1.8.1.jar)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-compiler-manager/1.8.1/plexus-compiler-manager-1.8.1.jar
+5K downloaded  (plexus-compiler-manager-1.8.1.jar)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-compiler-javac/1.8.1/plexus-compiler-javac-1.8.1.jar
+12K downloaded  (plexus-compiler-javac-1.8.1.jar)
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] No sources to compile
+[INFO] [groovy:compile {execution: default}]
+[INFO] No sources found to compile
+Downloading: file:///C:/Users/mkiami/.m2/repository/junit/junit/3.8.2/junit-3.8.2.jar
+117K downloaded  (junit-3.8.2.jar)
+[INFO] [groovy:generateTestStubs {execution: default}]
+[INFO] Generated 1 Java stub
+[INFO] [resources:testResources {execution: default-testResources}]
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\mkiami\Documents\Selenium\Snapshot\selenium-maven-plugin\target\it\basic-usage\src\test\resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to C:\Users\mkiami\Documents\Selenium\Snapshot\selenium-maven-plugin\target\it\basic-usage\target\test-classes
+[INFO] [groovy:testCompile {execution: default}]
+[INFO] Compiled 1 Groovy class
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-plugin-api/2.0.9/maven-plugin-api-2.0.9.pom
+1K downloaded  (maven-plugin-api-2.0.9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven/2.0.9/maven-2.0.9.pom
+18K downloaded  (maven-2.0.9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-parent/8/maven-parent-8.pom
+23K downloaded  (maven-parent-8.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/surefire/surefire-booter/2.8.1/surefire-booter-2.8.1.pom
+[INFO] Unable to find resource 'org.apache.maven.surefire:surefire-booter:pom:2.8.1' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-booter/2.8.1/surefire-booter-2.8.1.pom
+
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/surefire/surefire-api/2.8.1/surefire-api-2.8.1.pom
+[INFO] Unable to find resource 'org.apache.maven.surefire:surefire-api:pom:2.8.1' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/surefire/surefire-api/2.8.1/surefire-api-2.8.1.pom
+[INFO] Unable to find resource 'org.apache.maven.surefire:surefire-api:pom:2.8.1' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-api/2.8.1/surefire-api-2.8.1.pom
+
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/surefire/maven-surefire-common/2.8.1/maven-surefire-common-2.8.1.pom
+[INFO] Unable to find resource 'org.apache.maven.surefire:maven-surefire-common:pom:2.8.1' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.8.1/maven-surefire-common-2.8.1.pom
+
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-utils/2.0.7/plexus-utils-2.0.7.pom
+[INFO] Unable to find resource 'org.codehaus.plexus:plexus-utils:pom:2.0.7' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-utils/2.0.7/plexus-utils-2.0.7.pom
+[INFO] Unable to find resource 'org.codehaus.plexus:plexus-utils:pom:2.0.7' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/2.0.7/plexus-utils-2.0.7.pom
+
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.pom
+1K downloaded  (maven-artifact-2.0.9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.pom
+2K downloaded  (maven-project-2.0.9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.pom
+2K downloaded  (maven-settings-2.0.9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.pom
+3K downloaded  (maven-model-2.0.9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.pom
+2K downloaded  (maven-profile-2.0.9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.pom
+2K downloaded  (maven-artifact-manager-2.0.9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.pom
+1K downloaded  (maven-repository-metadata-2.0.9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.pom
+1K downloaded  (maven-plugin-registry-2.0.9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-core/2.0.9/maven-core-2.0.9.pom
+7K downloaded  (maven-core-2.0.9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.pom
+1K downloaded  (maven-plugin-parameter-documenter-2.0.9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/reporting/maven-reporting-api/2.0.9/maven-reporting-api-2.0.9.pom
+1K downloaded  (maven-reporting-api-2.0.9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/reporting/maven-reporting/2.0.9/maven-reporting-2.0.9.pom
+1K downloaded  (maven-reporting-2.0.9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.pom
+1K downloaded  (maven-error-diagnostics-2.0.9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.pom
+2K downloaded  (maven-plugin-descriptor-2.0.9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-monitor/2.0.9/maven-monitor-2.0.9.pom
+1K downloaded  (maven-monitor-2.0.9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.pom
+3K downloaded  (maven-toolchain-2.0.9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/shared/maven-common-artifact-filters/1.3/maven-common-artifact-filters-1.3.pom
+3K downloaded  (maven-common-artifact-filters-1.3.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/shared/maven-shared-components/12/maven-shared-components-12.pom
+9K downloaded  (maven-shared-components-12.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-parent/13/maven-parent-13.pom
+22K downloaded  (maven-parent-13.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/apache/6/apache-6.pom
+12K downloaded  (apache-6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-utils/2.0.7/plexus-utils-2.0.7.jar
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/shared/maven-common-artifact-filters/1.3/maven-common-artifact-filters-1.3.jar
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/surefire/surefire-booter/2.8.1/surefire-booter-2.8.1.jar
+[INFO] Unable to find resource 'org.codehaus.plexus:plexus-utils:jar:2.0.7' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+[INFO] Unable to find resource 'org.apache.maven.surefire:surefire-booter:jar:2.8.1' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-booter/2.8.1/surefire-booter-2.8.1.jar
+Downloading: http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/2.0.7/plexus-utils-2.0.7.jar
+30K downloaded  (maven-common-artifact-filters-1.3.jar)
+
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/surefire/surefire-api/2.8.1/surefire-api-2.8.1.jar
+[INFO] Unable to find resource 'org.apache.maven.surefire:surefire-api:jar:2.8.1' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/surefire/surefire-api/2.8.1/surefire-api-2.8.1.jar
+[INFO] Unable to find resource 'org.apache.maven.surefire:surefire-api:jar:2.8.1' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-api/2.8.1/surefire-api-2.8.1.jar
+
+
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/surefire/maven-surefire-common/2.8.1/maven-surefire-common-2.8.1.jar
+[INFO] Unable to find resource 'org.apache.maven.surefire:maven-surefire-common:jar:2.8.1' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.8.1/maven-surefire-common-2.8.1.jar
+
+[INFO] [surefire:test {execution: default-test}]
+[INFO] Tests are skipped.
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-project/2.0.7/maven-project-2.0.7.pom
+2K downloaded  (maven-project-2.0.7.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven/2.0.7/maven-2.0.7.pom
+10K downloaded  (maven-2.0.7.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-settings/2.0.7/maven-settings-2.0.7.pom
+1K downloaded  (maven-settings-2.0.7.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-model/2.0.7/maven-model-2.0.7.pom
+2K downloaded  (maven-model-2.0.7.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-profile/2.0.7/maven-profile-2.0.7.pom
+1K downloaded  (maven-profile-2.0.7.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.7/maven-artifact-manager-2.0.7.pom
+2K downloaded  (maven-artifact-manager-2.0.7.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-repository-metadata/2.0.7/maven-repository-metadata-2.0.7.pom
+1K downloaded  (maven-repository-metadata-2.0.7.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-artifact/2.0.7/maven-artifact-2.0.7.pom
+1K downloaded  (maven-artifact-2.0.7.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-plugin-registry/2.0.7/maven-plugin-registry-2.0.7.pom
+1K downloaded  (maven-plugin-registry-2.0.7.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-archiver/2.3/maven-archiver-2.3.pom
+3K downloaded  (maven-archiver-2.3.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-9/plexus-archiver-1.0-alpha-9.pom
+1K downloaded  (plexus-archiver-1.0-alpha-9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-components/1.1.9/plexus-components-1.1.9.pom
+2K downloaded  (plexus-components-1.1.9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-15/plexus-container-default-1.0-alpha-15.pom
+1K downloaded  (plexus-container-default-1.0-alpha-15.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-containers/1.0-alpha-15/plexus-containers-1.0-alpha-15.pom
+1K downloaded  (plexus-containers-1.0-alpha-15.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus/1.0.9/plexus-1.0.9.pom
+7K downloaded  (plexus-1.0.9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-component-api/1.0-alpha-15/plexus-component-api-1.0-alpha-15.pom
+948b downloaded  (plexus-component-api-1.0-alpha-15.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-classworlds/1.2-alpha-6/plexus-classworlds-1.2-alpha-6.pom
+2K downloaded  (plexus-classworlds-1.2-alpha-6.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-io/1.0-alpha-1/plexus-io-1.0-alpha-1.pom
+1K downloaded  (plexus-io-1.0-alpha-1.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-component-api/1.0-alpha-16/plexus-component-api-1.0-alpha-16.pom
+2K downloaded  (plexus-component-api-1.0-alpha-16.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-containers/1.0-alpha-16/plexus-containers-1.0-alpha-16.pom
+1K downloaded  (plexus-containers-1.0-alpha-16.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.9/plexus-utils-1.4.9.pom
+2K downloaded  (plexus-utils-1.4.9.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/commons-lang/commons-lang/2.1/commons-lang-2.1.pom
+9K downloaded  (commons-lang-2.1.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.9/plexus-utils-1.4.9.jar
+Downloading: file:///C:/Users/mkiami/.m2/repository/commons-lang/commons-lang/2.1/commons-lang-2.1.jar
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-archiver/2.3/maven-archiver-2.3.jar
+17K downloaded  (maven-archiver-2.3.jar)
+202K downloaded  (commons-lang-2.1.jar)
+199K downloaded  (plexus-utils-1.4.9.jar)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0-alpha-9/plexus-archiver-1.0-alpha-9.jar
+153K downloaded  (plexus-archiver-1.0-alpha-9.jar)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/codehaus/plexus/plexus-io/1.0-alpha-1/plexus-io-1.0-alpha-1.jar
+11K downloaded  (plexus-io-1.0-alpha-1.jar)
+[INFO] [jar:jar {execution: default-jar}]
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: C:\Users\mkiami\Documents\Selenium\Snapshot\selenium-maven-plugin\target\it\basic-usage\target\basic-usage-testing.jar
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/maven-repository-metadata/2.0.10/maven-repository-metadata-2.0.10.pom
+2K downloaded  (maven-repository-metadata-2.0.10.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.4.0/selenium-chrome-driver-2.4.0.pom
+2K downloaded  (selenium-chrome-driver-2.4.0.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/seleniumhq/selenium/selenium-htmlunit-driver/2.4.0/selenium-htmlunit-driver-2.4.0.pom
+3K downloaded  (selenium-htmlunit-driver-2.4.0.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.pom
+10K downloaded  (commons-codec-1.4.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/commons/commons-parent/11/commons-parent-11.pom
+24K downloaded  (commons-parent-11.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.pom
+12K downloaded  (commons-io-1.4.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/commons/commons-parent/7/commons-parent-7.pom
+17K downloaded  (commons-parent-7.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.4.0/selenium-firefox-driver-2.4.0.pom
+3K downloaded  (selenium-firefox-driver-2.4.0.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.4.0/selenium-ie-driver-2.4.0.pom
+3K downloaded  (selenium-ie-driver-2.4.0.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/net/java/dev/jna/jna/3.2.3/jna-3.2.3.pom
+2K downloaded  (jna-3.2.3.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/seleniumhq/selenium/selenium-iphone-driver/2.4.0/selenium-iphone-driver-2.4.0.pom
+1K downloaded  (selenium-iphone-driver-2.4.0.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/2.0rc2/selenium-remote-driver-2.0rc2.pom
+2K downloaded  (selenium-remote-driver-2.0rc2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/seleniumhq/selenium/selenium-api/2.0rc2/selenium-api-2.0rc2.pom
+3K downloaded  (selenium-api-2.0rc2.pom)
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.pom
+6K downloaded  (httpclient-4.0.1.pom)
+[INFO] [selenium:start-server {execution: start}]
+Created dir: C:\Users\mkiami\Documents\Selenium\Snapshot\selenium-maven-plugin\target\it\basic-usage\target\selenium
+Launching Selenium Server
+Waiting for Selenium Server...
+[INFO] User extensions: C:\Users\mkiami\Documents\Selenium\Snapshot\selenium-maven-plugin\target\it\basic-usage\target\selenium\user-extensions.js
+11:36:00,054 INFO  [org.openqa.selenium.server.SeleniumServer] Java: Sun Microsystems Inc. 14.0-b16
+11:36:00,054 INFO  [org.openqa.selenium.server.SeleniumServer] OS: Windows 7 6.1 x86
+11:36:00,095 INFO  [org.openqa.selenium.server.SeleniumServer] v2.4.0, with Core v2.4.0. Built from revision 13336
+11:36:00,254 INFO  [org.openqa.selenium.server.SeleniumServer] RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+11:36:00,254 INFO  [org.openqa.jetty.http.HttpServer] Version Jetty/5.1.x
+11:36:00,255 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+11:36:00,256 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/selenium-server,/selenium-server]
+11:36:00,256 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/,/]
+11:36:00,288 INFO  [org.openqa.jetty.util.Container] Started org.openqa.jetty.jetty.servlet.ServletHandler@1b000e7
+11:36:00,288 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/wd,/wd]
+11:36:00,292 INFO  [org.openqa.jetty.http.SocketListener] Started SocketListener on 0.0.0.0:4444
+11:36:00,292 INFO  [org.openqa.jetty.util.Container] Started org.openqa.jetty.jetty.Server@1ab28fe
+11:36:01.066 INFO - Checking Resource aliases
+Selenium Server started
+[INFO] [surefire:test {execution: default}]
+[INFO] Surefire report directory: C:\Users\mkiami\Documents\Selenium\Snapshot\selenium-maven-plugin\target\it\basic-usage\target\surefire-reports
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/surefire/surefire-junit3/2.8.1/surefire-junit3-2.8.1.pom
+[INFO] Unable to find resource 'org.apache.maven.surefire:surefire-junit3:pom:2.8.1' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-junit3/2.8.1/surefire-junit3-2.8.1.pom
+
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/surefire/surefire-providers/2.8.1/surefire-providers-2.8.1.pom
+[INFO] Unable to find resource 'org.apache.maven.surefire:surefire-providers:pom:2.8.1' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-providers/2.8.1/surefire-providers-2.8.1.pom
+
+Downloading: file:///C:/Users/mkiami/.m2/repository/org/apache/maven/surefire/surefire-junit3/2.8.1/surefire-junit3-2.8.1.jar
+[INFO] Unable to find resource 'org.apache.maven.surefire:surefire-junit3:jar:2.8.1' in repository local.central (file:///C:/Users/mkiami/.m2/repository)
+Downloading: http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-junit3/2.8.1/surefire-junit3-2.8.1.jar
+
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running SeleniumExampleTest
+11:36:03,146 INFO  [org.openqa.jetty.util.Credential] Checking Resource aliases
+11:36:03.151 INFO - Command request: getNewBrowserSession[*firefox, http://mojo.codehaus.org:80/, ] on session null
+11:36:03.155 INFO - creating new remote session
+11:36:03.224 INFO - Allocated session f7eb1c62525445eda63a9294e6058c4b for http://mojo.codehaus.org:80/, launching...
+11:36:03.497 INFO - Preparing Firefox profile...
+11:36:10.113 INFO - Launching Firefox...
+11:36:21.036 INFO - Got result: OK,f7eb1c62525445eda63a9294e6058c4b on session f7eb1c62525445eda63a9294e6058c4b
+11:36:21.045 INFO - Command request: open[/selenium-maven-plugin/, ] on session f7eb1c62525445eda63a9294e6058c4b
+11:36:22.246 INFO - Got result: OK on session f7eb1c62525445eda63a9294e6058c4b
+11:36:22.249 INFO - Command request: waitForPageToLoad[30000, ] on session f7eb1c62525445eda63a9294e6058c4b
+11:36:22.256 INFO - Got result: OK on session f7eb1c62525445eda63a9294e6058c4b
+11:36:22.258 INFO - Command request: getTitle[, ] on session f7eb1c62525445eda63a9294e6058c4b
+11:36:22.265 INFO - Got result: OK,Selenium Maven Plugin - Introduction on session f7eb1c62525445eda63a9294e6058c4b
+11:36:22.276 INFO - Command request: testComplete[, ] on session f7eb1c62525445eda63a9294e6058c4b
+11:36:22.276 INFO - Killing Firefox...
+11:36:22.407 INFO - Got result: OK on session f7eb1c62525445eda63a9294e6058c4b
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.663 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] [selenium:stop-server {execution: stop}]
+Stopping Selenium server...
+11:36:22.494 INFO - Command request: shutDownSeleniumServer[, ] on session null
+11:36:22.494 INFO - Shutdown command received
+11:36:22.494 INFO - initiating shutdown
+11:36:22.494 INFO - Got result: OK on session null
+Stop request sent
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 50 seconds
+[INFO] Finished at: Mon Aug 22 11:36:22 CEST 2011
+[INFO] Final Memory: 31M/58M
+[INFO] ------------------------------------------------------------------------

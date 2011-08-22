@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <plugins>
+    <plugin>
+      <name>Maven Selenium Plugin</name>
+      <prefix>selenium</prefix>
+      <artifactId>selenium-maven-plugin</artifactId>
+    </plugin>
+  </plugins>
+</metadata>

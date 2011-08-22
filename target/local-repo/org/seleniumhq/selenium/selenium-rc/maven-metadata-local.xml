@@ -1,0 +1,10 @@
+<metadata>
+  <groupId>org.seleniumhq.selenium</groupId>
+  <artifactId>selenium-rc</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0.2</version>
+    </versions>
+    <lastUpdated>20110822093529</lastUpdated>
+  </versioning>
+</metadata>

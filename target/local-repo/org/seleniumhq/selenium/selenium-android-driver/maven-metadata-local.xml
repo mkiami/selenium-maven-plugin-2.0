@@ -1,0 +1,10 @@
+<metadata>
+  <groupId>org.seleniumhq.selenium</groupId>
+  <artifactId>selenium-android-driver</artifactId>
+  <versioning>
+    <versions>
+      <version>2.4.0</version>
+    </versions>
+    <lastUpdated>20110822093527</lastUpdated>
+  </versioning>
+</metadata>
